@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -19,14 +20,14 @@
     <header>
       <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" 
       data-offset-top="775">
-        <div id="home" class="container">
+        <div id="home" class="container ">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Constantin Pojoga</a>
+            <a class="navbar-brand" href="#homepage">Constantin Pojoga</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav ">
@@ -40,106 +41,115 @@
       </nav>
     </header>
 
-    <div class="container-fluid text-center">
+    <div class="container text-center">
       <!-- <h1 class="hidden-xs"><br /></h1> -->
-      <h1 class="homepage"> Constantin Pojoga</h1>
-      <h1>a Front End Developer</h1>
+      <h1 class="homepage homepage-text"> Constantin Pojoga</h1>
+      <h1 class="homepage-text">a Front End Developer</h1>
       <h4>who focuses on writing clean, elegant and efficient code</h4>
       <a class="btn portfolio-link" type="button" href="#portfolio">my Work</a>
 
-      <div class="scroll-down">
-        
+      <div class="homepage-scroll">
+       <img class="img-responsive" src="http://boscomattel.com/wp-content/themes/sage-boscomattel/dist/images/scroll-down2.gif">
       </div>
     </div>
   </section>
 
-
-  <section class="container-fluid text-center" id="aboutme">
-    <div class="col-sm-4">
-      <img class="img-responsive" src="img/my_photo1.png">
-    </div> 
-    <div class="col-md-8"></div>
-    <h2>About me:</h2>
-    <h2>Some text here...</h2>
-    <h2>Another text...</h2>
-  </section>
-
-  
-  <section id="portfolio" class="container-fluid bg-3 text-center">
-    <h3>Some of my Work:</h3>
-    <div class="row">
-      <div class="col-sm-6 col-md-4 thumbnail">
-        <h3>sChat</h3>
-          <img class="img-thumbnail img-responsive" src="img/schat-preview.jpg" class="img-responsive" alt="Image">
-        <p>A single page  chat app which users to connect to multiple channels and send messages, pictures, or snippets. </p>
-        <p class="visible-sm visible-xs">For this app, I’ve used Node.js, Express, Socket.io, Moment.js, MongoDB, jQuery, Gulp, LESS.</p>
+  <!-- About me page -->
+  <section class="text-center" id="aboutme">
+    <div class="container">
+      <div class="col-sm-4">
+        <img class="img-responsive" src="img/my_photo1.png">
+      </div> 
+      <div class="col-md-8">
+        <h2>About me:</h2>
+        <h2>Some text here...</h2>
+        <h2>Another text...</h2>
       </div>
-      <div class="col-sm-6 col-md-4 thumbnail">
-        <h3>myStreet</h3>
-        <img class="img-thumbnail img-responsive" src="img/mystreet-preview.jpg" class="img-responsive" alt="Image">
-         <p>A Restful API, which will help people to move to new places and easily meets their new neighbors, makes new friends. </p>
-        <p class="visible-sm visible-xs">For this app, I have used Ruby, Sinatra, SQLite3, BCrypt, Google API, LESS, Rake, Gulp.</p>
-
-      </div>
-      <div class="col-sm-6 col-md-4 thumbnail">
-        <h3>Artgallery</h3>
-        <img class="img-thumbnail img-responsive" src="img/artgallery-preview.jpg" class="img-responsive" alt="Image">
-         <p>A Restful API that allows listing, adding, editing the artists, and their artwork in a the virtual gallery.</p> <br />
-        <p class="visible-sm visible-xs">For this project, I’ve used Node.js, Express, MongoDB, BCrypt, Multer, jQuery , Gulp, LESS.</p> 
-
-      </div>
-      <div class="col-sm-6 col-md-4 thumbnail">
-        <h3>Movig game</h3>
-        <img class="img-thumbnail img-responsive" src="img/moving-game-preview.jpg" class="img-responsive" alt="Image">
-         <p>A logical game with multiple levels. Use the keyboard to control "Scrat" and to push acorns in the required fields.</p>
-        <p class="visible-sm visible-xs">For this app, I’ve used HTML, CSS, JavaScript, jQuery and Canvas.</p><br />
-
-      </div>
-      <div class="col-sm-6 col-md-4 thumbnail">
-        <h3>Meteo App</h3>
-        <img class="img-thumbnail img-responsive" src="img/meteo-app-preview.jpg" class="img-responsive" alt="Image">
-         <p>A weather application using Yahoo Weather API and Geolocation, both imperial and metric systems of measurement.</p>
-        <p class="visible-sm visible-xs">For this app, I have used the Yahoo Weather API, Geolocation</p>
-
-      </div>
-      <div class="col-sm-6 col-md-4 thumbnail">
-        <h3>Dom manipulation</h3>
-        <img class="img-thumbnail img-responsive" src="img/bubles-preview.jpg" class="img-responsive" alt="Image">
-        <p>An example of animated project, made only with JavaScript </p>
-        <p  class="visible-sm visible-xs">This project is made only with JavaScript, and Bootstrap icons</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="container-fluid"  id="contact">
-    <div class="row">
-      <div class="col-md-4 col-sm-5">
-        <h2>Contact:</h2>
-        <p><span class="glyphicon glyphicon-earphone">&nbsp;</span> (630)849-9000</p>
-        <p><span class="glyphicon glyphicon-envelope">&nbsp;</span> pojogac@gmail.com</p>
-        <p><a href="https://github.com/constantinpojoga">https://github.com/constantinpojoga</a></p>
       
-          <form class="form-horizontal">
-          <div class="form-group">
-            <label class="control-label" for="inputName">Your name</label>
-            <input id="inputName" class="form-control" type="text" name="name" placeholder="Your name">
-            <label class="control-label" for="inputEmail">Your email</label>
-            <input id="inputEmail" class="form-control" type="email" name="email" placeholder="Your email address">
-            <label class="control-label" for="inputMessage">Your message</label>
-            <textarea  class="form-control" rows="5" id="inputMessage" placeholder="Your message here..."></textarea>
-            <button class="btn btn-default" type="button">Send</button>
-          
-        </form>
-          
-        </div>
-        
-
-      </div>
-      <div class="col-md-8 col-sm-7">
-        <br>
-        <img class="img-responsive hidden-xs" src="img/chicagomap1.jpg"><br />
-      </div>
     </div>
+  </section>
+
+  <!-- Portfolio page -->
+  <section id="portfolio" class="bg-3 text-center">
+    <div class="container">
+      <h3>Some of my Work:</h3>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 thumbnail">
+          <h3>sChat</h3>
+            <img class="img-thumbnail img-responsive" src="img/schat-preview.jpg" class="img-responsive" alt="Image">
+          <p>A single page  chat app, allowing users to join multiple channels, send messages, images, and code snippets. </p>
+          <p class="visible-sm visible-xs">For this app, I used Node.js, Express, Socket.io, Moment.js, MongoDB, jQuery, Gulp, LESS.</p>
+        </div>
+        <div class="col-sm-6 col-md-4 thumbnail">
+          <h3>myStreet</h3>
+          <img class="img-thumbnail img-responsive" src="img/mystreet-preview.jpg" class="img-responsive" alt="Image">
+           <p>A R Restful API that helps people move to new places and easily meet new neighbors, make new friends, etc. </p>
+          <p class="visible-sm visible-xs">For this project, I used Ruby, Sinatra, SQLite3, BCrypt, Google API, LESS, Rake, Gulp.</p>
+
+        </div>
+        <div class="col-sm-6 col-md-4 thumbnail">
+          <h3>Artgallery</h3>
+          <img class="img-thumbnail img-responsive" src="img/artgallery-preview.jpg" class="img-responsive" alt="Image">
+           <p>A Restful API that allows listing and adding artists and their artwork to a virtual gallery.</p> <br />
+          <p class="visible-sm visible-xs">For this project, I used Node.js, Express, MongoDB, BCrypt, Multer, jQuery , Gulp, LESS.</p> 
+
+        </div>
+        <div class="col-sm-6 col-md-4 thumbnail">
+          <h3>Acorn rush</h3>
+          <img class="img-thumbnail img-responsive" src="img/moving-game-preview.jpg" class="img-responsive" alt="Image">
+           <p>A logical moving game in which a keyboard is used to control the main character "Scrat" and to push acorns into the required fields.</p>
+          <span class="visible-sm visible-xs">For this app, I used HTML, CSS, JavaScript, jQuery and Canvas.</span><br />
+
+        </div>
+        <div class="col-sm-6 col-md-4 thumbnail">
+          <h3>Meteo App</h3>
+          <img class="img-thumbnail img-responsive" src="img/meteo-app-preview.jpg" class="img-responsive" alt="Image">
+           <p>A weather application using Yahoo Weather API and Geolocation, imperial and metric systems.</p>
+          <p class="visible-sm visible-xs">For this app, I used the Yahoo Weather API and Geolocation</p>
+
+        </div>
+        <div class="col-sm-6 col-md-4 thumbnail">
+          <h3>Dom manipulation</h3>
+          <img class="img-thumbnail img-responsive" src="img/bubles-preview.jpg" class="img-responsive" alt="Image">
+          <p>An example of animated project, made only with JavaScript </p>
+          <p  class="visible-sm visible-xs">This project is made only with JavaScript, and Bootstrap icons</p>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+
+  <!-- Contact page -->
+  <section class="container-fluid"  id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-5">
+          <h2>Contact:</h2>
+          <p><span class="glyphicon glyphicon-earphone">&nbsp;</span> (630)849-9000</p>
+          <p><span class="glyphicon glyphicon-envelope">&nbsp;</span> pojogac@gmail.com</p>
+          <p><a href="https://github.com/constantinpojoga">https://github.com/constantinpojoga</a></p>
+        
+            <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label" for="inputName">Your name</label>
+              <input id="inputName" class="form-control" type="text" name="name" placeholder="Your name">
+              <label class="control-label" for="inputEmail">Your email</label>
+              <input id="inputEmail" class="form-control" type="email" name="email" placeholder="Your email address">
+              <label class="control-label" for="inputMessage">Your message</label>
+              <textarea  class="form-control" rows="5" id="inputMessage" placeholder="Your message here..."></textarea>
+              <button class="btn btn-default" type="button">Send</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-8 col-sm-7">
+          <br>
+          <img class="img-responsive hidden-xs" src="img/chicagomap1.jpg"><br />
+        </div>
+      </div>
+      
+    </div>
+      
   </section>
 
 
