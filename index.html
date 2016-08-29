@@ -3,19 +3,20 @@
 <head>
   <title>Constantin Pojoga</title>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Londrina+Solid" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar-inverse" data-offset="75">
+<body data-spy="scroll" data-target=".navbar-inverse" data-offset="52">
 
- 
-  
   <section id="homepage">
     <header>
       <nav class="navbar navbar-inverse" role="navigation" data-spy="affix" 
@@ -30,7 +31,7 @@
             <a class="navbar-brand" href="#homepage">Constantin Pojoga</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav ">
+            <ul class="nav navbar-nav">
               <li class="active"><a href="#homepage">Home</a></li>
               <li><a href="#aboutme">About</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
@@ -57,60 +58,79 @@
   <!-- About me page -->
   <section class="text-center" id="aboutme">
     <div class="container">
-      <div class="col-sm-4">
-        <img class="img-responsive" src="img/my_photo1.png">
-      </div> 
-      <div class="col-md-8">
-        <h2>About me:</h2>
-        <h2>Some text here...</h2>
-        <h2>Another text...</h2>
-      </div>
-      
-    </div>
+      <div class="row">
+        <div class="col-sm-4">
+        <!-- <h3 class="hidden-sm hidden-xs">&nbsp;</h3> -->
+          <img class="img-responsive" src="img/my_photo1.png">
+          <br />  
+          <h2>In present working hard to find the best formula:</h2>
+        </div> 
+        <div class="col-md-8">
+          <h3 class="hidden-sm hidden-xs">&nbsp;</h3>
+          <h1>About me:</h1>
+          <h2>I 'm an ambitious Web Develope with strong mathematical aptitude, excellent organizational and communication skills. My skills help me to build complex, responsive projects and to maintain clean code.</h2> <br />
+          <h3 class="hidden">Technical skills: HTML, CSS, JavaScript, jQuery, Angular, Ruby, Bootstrap, Sinatra, Express, SQLlite3, Node.js, MongoDB, BCrypt, Multer, Gulp, LESS, Git, GitHub, React.</h3>
+
+          <img class="img-responsive formula" src="img/formula.png">
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
   </section>
 
   <!-- Portfolio page -->
   <section id="portfolio" class="bg-3 text-center">
     <div class="container">
-      <h3>Some of my Work:</h3>
+      <h2>Some of my Work:</h2>
       <div class="row">
         <div class="col-sm-6 col-md-4 thumbnail">
           <h3>sChat</h3>
-            <img class="img-thumbnail img-responsive" src="img/schat-preview.jpg" class="img-responsive" alt="Image">
+            <a href="http://www.pojoga.com/schat">
+              <img class="img-thumbnail img-responsive" src="img/schat-preview.jpg" class="img-responsive" alt="Image">
+            </a>
+            
           <p>A single page  chat app, allowing users to join multiple channels, send messages, images, and code snippets. </p>
           <p class="visible-sm visible-xs">For this app, I used Node.js, Express, Socket.io, Moment.js, MongoDB, jQuery, Gulp, LESS.</p>
         </div>
         <div class="col-sm-6 col-md-4 thumbnail">
           <h3>myStreet</h3>
-          <img class="img-thumbnail img-responsive" src="img/mystreet-preview.jpg" class="img-responsive" alt="Image">
-           <p>A R Restful API that helps people move to new places and easily meet new neighbors, make new friends, etc. </p>
+          <a href="http://www.pojoga.com/mystreet">
+            <img class="img-thumbnail img-responsive" src="img/mystreet-preview.jpg" class="img-responsive" alt="Image">
+          </a>
+          <p>A Restful API that helps people move to new places and easily meet new neighbors, make new friends, etc. </p>
           <p class="visible-sm visible-xs">For this project, I used Ruby, Sinatra, SQLite3, BCrypt, Google API, LESS, Rake, Gulp.</p>
-
         </div>
         <div class="col-sm-6 col-md-4 thumbnail">
           <h3>Artgallery</h3>
-          <img class="img-thumbnail img-responsive" src="img/artgallery-preview.jpg" class="img-responsive" alt="Image">
+          <a href="http://www.pojoga.com/artgallery">
+            <img class="img-thumbnail img-responsive" src="img/artgallery-preview.jpg" class="img-responsive" alt="Image">
+          </a>
            <p>A Restful API that allows listing and adding artists and their artwork to a virtual gallery.</p> <br />
           <p class="visible-sm visible-xs">For this project, I used Node.js, Express, MongoDB, BCrypt, Multer, jQuery , Gulp, LESS.</p> 
 
         </div>
         <div class="col-sm-6 col-md-4 thumbnail">
           <h3>Acorn rush</h3>
-          <img class="img-thumbnail img-responsive" src="img/moving-game-preview.jpg" class="img-responsive" alt="Image">
-           <p>A logical moving game in which a keyboard is used to control the main character "Scrat" and to push acorns into the required fields.</p>
+          <a href="http:/wwww.pojoga.com/acornrush">
+            <img class="img-thumbnail img-responsive" src="img/moving-game-preview.jpg" class="img-responsive" alt="Image">
+          </a>
+           <p>A logical moving game in which a keyboard is used to control "Scrat" and to push acorns into the required fields.</p>
           <span class="visible-sm visible-xs">For this app, I used HTML, CSS, JavaScript, jQuery and Canvas.</span><br />
 
         </div>
         <div class="col-sm-6 col-md-4 thumbnail">
           <h3>Meteo App</h3>
-          <img class="img-thumbnail img-responsive" src="img/meteo-app-preview.jpg" class="img-responsive" alt="Image">
+          <a href="https://wwww.pojoga.com/meteoapp">
+            <img class="img-thumbnail img-responsive" src="img/meteo-app-preview.jpg" class="img-responsive" alt="Image">
+          </a>
            <p>A weather application using Yahoo Weather API and Geolocation, imperial and metric systems.</p>
-          <p class="visible-sm visible-xs">For this app, I used the Yahoo Weather API and Geolocation</p>
+          <p class="visible-sm visible-xs">For this app, I used the Yahoo Weather API and Geolocation. Works only in https://</p>
 
         </div>
         <div class="col-sm-6 col-md-4 thumbnail">
           <h3>Dom manipulation</h3>
-          <img class="img-thumbnail img-responsive" src="img/bubles-preview.jpg" class="img-responsive" alt="Image">
+          <a href="http://wwww.pojoga.com/dommanipulation">
+            <img class="img-thumbnail img-responsive" src="img/bubles-preview.jpg" class="img-responsive" alt="Image">
+          </a>
           <p>An example of animated project, made only with JavaScript </p>
           <p  class="visible-sm visible-xs">This project is made only with JavaScript, and Bootstrap icons</p>
         </div>
@@ -121,36 +141,41 @@
   </section>
 
   <!-- Contact page -->
-  <section class="container-fluid"  id="contact">
+  <section id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-5">
-          <h2>Contact:</h2>
-          <p><span class="glyphicon glyphicon-earphone">&nbsp;</span> (630)849-9000</p>
-          <p><span class="glyphicon glyphicon-envelope">&nbsp;</span> pojogac@gmail.com</p>
-          <p><a href="https://github.com/constantinpojoga">https://github.com/constantinpojoga</a></p>
-        
-            <form class="form-horizontal">
+
+        <div class="col-sm-5 col-md-4">
+          <h2 class="text-center">Hire me:</h2>
+          <p><span class="fa-span"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i></span>&nbsp;
+            (630)849-9000</p>
+          <p><span class="fa-span"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></span>&nbsp;
+            pojogac@gmail.com</p>
+          <p><span class="fa-span"><i class="fa fa-github fa-2x" aria-hidden="true"></i></span>&nbsp;
+            <a href="https://github.com/constantinpojoga"> https://github.com/constantinpojoga</a></p>
+          <p><span class="fa-span"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></span>&nbsp;
+            <a href="https://linkedin.com/in/constantin-pojoga">https://linkedin.com/in/constantin-pojoga</a></p>
+             <h3>&nbsp;</h3>
+          <form class="form-horizontal mail-me-form">
             <div class="form-group">
               <label class="control-label" for="inputName">Your name</label>
               <input id="inputName" class="form-control" type="text" name="name" placeholder="Your name">
               <label class="control-label" for="inputEmail">Your email</label>
               <input id="inputEmail" class="form-control" type="email" name="email" placeholder="Your email address">
-              <label class="control-label" for="inputMessage">Your message</label>
+              <label class="control-label" for="inputMessage">Send me a message...</label>
               <textarea  class="form-control" rows="5" id="inputMessage" placeholder="Your message here..."></textarea>
               <button class="btn btn-default" type="button">Send</button>
-            </form>
-          </div>
+            </div>
+          </form>
+
+        </div> <!-- col-md-4 col-sm-5 -->
+        <div class="col-sm-7 col-md-8 "> 
+          <img class="chicago-map img-responsive hidden-xs hidden-sm" src="img/chicagomap1.jpg">
+          <img class="chicago-map img-responsive hidden-xs hidden-md hidden-lg" src="img/chicagomap-sm.jpg">
         </div>
-        <div class="col-md-8 col-sm-7">
-          <br>
-          <img class="img-responsive hidden-xs" src="img/chicagomap1.jpg"><br />
-        </div>
-      </div>
-      
-    </div>
-      
-  </section>
+      </div> <!-- .row -->
+     </div> <!-- .container -->     
+  </section><!-- contact me page -->
 
 
   <footer class="container-fluid text-center">
@@ -160,7 +185,7 @@
 
 
 
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,9 +3,19 @@ body {
   height: 100%;
   margin: 0;
 }
+
+h1, h2, h3, h4 {
+  font-family: 'Londrina Solid', cursive;
+}
+
+h4  {
+  font-size: 19px;
+  margin-top: 20px;
+}
+
 section {
   min-height: calc(100vh - 50px);
-  border-bottom: 1px solid grey;
+  /*border-bottom: 1px solid #333;*/
   background: url('../img/bg3.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,12 +28,24 @@ section:nth-child(1) {
   background-repeat: no-repeat;
   background-position: center;
 }
-/*section:nth-child(2) {
+section:nth-child(2) {
+  font-family: 'Londrina Solid', cursive;
+}
+
+section:nth-child(2) h2, h3 {
+  line-height: 1.5;
+}
+
+img.formula {
+  /*border: 20px solid lightgrey;*/
+  margin-top: -50px;
 
 }
+
 section:nth-child(3) {
-  background: #d2daed;
-}*/
+  background: url('../img/bg3_test.png');
+  /*background: #cccc99;*/
+}
 section:nth-child(4) {
   min-height: calc(100vh - 100px);
 }
@@ -49,7 +71,6 @@ body {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-
 }
 
 footer {
@@ -63,9 +84,9 @@ footer p {
   margin: 10px;
 }
 
-
 .img-thumbnail {
   border-radius: 0;
+  border: 2px solid #999;
 }
 
 .navbar-inverse {
@@ -79,8 +100,15 @@ footer p {
   border: none;
 }
 
+.thumbnail img:hover {
+  opacity: 0.9;
+  border: 2px solid #555;
+}
+
 .thumbnail img {
   margin-bottom: 10px;
+  position: relative;
+  top: 0;
 }
 
 .homepage {
@@ -111,12 +139,41 @@ footer p {
   border: 3px solid #777;
 }
 
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to   {opacity: 1}
+}
+
 .homepage-scroll {
-  /*background-color: rgba(0,0,0,0.8);*/
   width: 50px;
   height: 60px;
   position: absolute;
   bottom: 0;
   left: calc(50vw - 25px);
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
 
+.fa-span {
+  top: 5px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 30px;
+}
+
+.chicago-map {
+  margin-top: 75px; 
+  margin-left: 10%;
+  width: 90%;
+}
+
+.mail-me-form {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.mail-me-form button {
+  margin-top: 5px;
 }
