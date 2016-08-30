@@ -177,3 +177,9 @@ footer p {
 .mail-me-form button {
   margin-top: 5px;
 }
+
+@media (min-width: 768px) {
+  .homepage {
+    margin-top: 35vh;
+  }
+}
