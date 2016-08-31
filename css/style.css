@@ -112,9 +112,6 @@ footer p {
   top: 0;
 }
 
-.homepage {
-  margin-top: 35vh;
-}
 
 .homepage-text {
   font-family: 'Londrina Solid', cursive;
@@ -181,6 +178,6 @@ footer p {
 
 @media (max-width: 768px) {
   .homepage {
-    margin-top: 20vh;
+    /*margin-top: 20vh;*/
   }
 }
