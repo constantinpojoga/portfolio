@@ -14,6 +14,7 @@ h4  {
 }
 
 section {
+  min-height: 736px;
   min-height: calc(100vh - 50px);
   /*border-bottom: 1px solid #333;*/
   background: url('../img/bg3.png');
@@ -180,6 +181,6 @@ footer p {
 
 @media (max-width: 768px) {
   .homepage {
-    margin-top: 15vh;
+    margin-top: 20vh;
   }
 }
