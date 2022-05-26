@@ -35,6 +35,7 @@ p {
 }
 
 .container {
+  position: relative;
   max-width: 1200px;
   padding: 1em;
   margin: 0 auto;
@@ -42,4 +43,23 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+}
+
+.container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://1.cms.s81c.com/sites/default/files/ibm_security_zsecure_adapters_for_siem_full_hero_fc1e0f6e-ab6a-4d71-85cc-1db7af4609fb_fee1297a-c849-4d85-b275-777dd49e820f_2.png);
+  background-position: top center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+a {
+  color: #357edd;
 }
